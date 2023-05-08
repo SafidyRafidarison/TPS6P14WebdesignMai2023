@@ -1,23 +1,15 @@
 <!doctype html>
 <html lang="fr">
-<!-- Mirrored from themesbrand.com/lexa/layouts/ui-cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2023 07:53:51 GMT -->
 <head>
-
         <meta charset="utf-8" />
         <title>Actualités</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico"> 
-        
-        <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
     </head>
 
     <body data-sidebar="dark">
@@ -51,7 +43,6 @@
                     </div>
                 </div>
             </header>
-            
             <!-- ========== Left Sidebar Start ========== -->
             <div class="vertical-menu">
 
@@ -83,11 +74,6 @@
                     <!-- Sidebar -->
                 </div>
             </div>
-            <!-- Left Sidebar End -->
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
             <div class="main-content">
 
                 <div class="page-content">
@@ -109,7 +95,6 @@
                                         <a href="{{ url('/info/'.urlPrint($row->titre).'/'.$row->idinformation) }}" class="btn btn-primary waves-effect waves-light">Voir plus</a>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- end col -->
                      @endforeach                            
@@ -118,9 +103,6 @@
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
-
-                
-             
             </div>
             <!-- end main content-->
 
@@ -129,17 +111,8 @@
 
         <!-- Right Sidebar -->
         
-
-      
-        
         <!-- JAVASCRIPT -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
-        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
-
+        
         <!-- App js -->
         <script src="assets/js/app.js"></script>
     </body>

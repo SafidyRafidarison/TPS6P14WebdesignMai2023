@@ -325,21 +325,13 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
-
+                        <p>
+                            <h3>
+                        <a href="{{url('/addInfo')}}" class="btn btn-primary">
+                        Ajouter des actualités </a></h3>
+                        </p>
                         <!-- start page title -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="page-title-box">
-                                    <h4>Cards</h4>
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Lexa</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
-                                            <li class="breadcrumb-item active">Cards</li>
-                                        </ol>
-                                </div>
-                            </div>
-                           
-                        </div>
+                       
                         <!-- end page title -->
 
                         <div class="row">
