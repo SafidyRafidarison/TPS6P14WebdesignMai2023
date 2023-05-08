@@ -16,8 +16,8 @@ use App\Http\Controllers\WelcomeController;
 
 Route::get('/', [WelcomeController::class, 'index']);
 Route::get('article/{n}/{test}', [WelcomeController::class, 'show'])->where('n', '[0-9]+');
-Route::get('/back',function(){return view('login');});
-Route::get('/auth',function(){return view('back');})->name('back-office');
+Route::get('/back',function(){return view('login');})->name('login');
+Route::get('/auth',[WelcomeController::class, 'back'])->name('back-office');
 
 // Route::get('/', function () {
 //     return view('ui-cards');
@@ -56,3 +56,4 @@ Route::get('/addInfo',function(){return view('addInfo');})->name('ajout');
 
 
 Route::get('info/{extra}/{id}', [WelcomeController::class,'details'])->where('extra', '.*');
+Route::get('delete/{extra}/{id}', [WelcomeController::class,'delete'])->where('extra', '.*');

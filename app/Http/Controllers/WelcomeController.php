@@ -105,17 +105,28 @@ class WelcomeController extends Controller
         return $pdf->download('hello.pdf');
     }
 
-    public function rew()
+    public function back()
     {
-        echo('ok');
+        $inf = DB::select("select * from information ");
+        $data = array(
+            'infs'=>   $inf
+        );
+        return view('back',$data);
+        
     }
 
+    public function delete($extra,$id)
+    {
+        $deleted = DB::table('information')->where('idinformation',$id)->delete();
+        redirect()->route('back-office');
+    }
     public function addContent(Request $request)
     {
         
         $picture = $request->file('file');
-         $filename = $picture->getClientOriginalName();
-         $picture->move(public_path('uploads'), $filename);
+        //  $filename = $picture->getClientOriginalName();
+        //  $picture->move(public_path('uploads'), $filename);
+        $filename='test.jpg';
         DB::table('information')->insert([
                     ['idauteur' => $request->input('idauteur'), 'date_creation' =>  $request->input('creation'),'date_publication' =>  $request->input('creation'),
                     'resume' => $request->input('resume'),'contenus' => $request->input('editor1'),'titre' => $request->input('titre'),'couverture' =>$filename]

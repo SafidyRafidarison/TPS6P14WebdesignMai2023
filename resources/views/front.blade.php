@@ -297,7 +297,7 @@
                             <li class="menu-title">Principale</li>
 
                             <li>
-                                <a href="{{url('/addInfo')}}" class="waves-effect">
+                                <a href="{{url('/back')}}" class="waves-effect">
                                     <i class="mdi mdi-view-dashboard"></i>
                                     <span class="badge rounded-pill bg-primary float-end">1</span>
                                     <span>Back-Office</span>
