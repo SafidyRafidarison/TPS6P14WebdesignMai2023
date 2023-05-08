@@ -347,12 +347,12 @@
                             <div class="col-md-6 col-lg-6 col-xl-3">
                                 <!-- Simple card -->
                                 <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                <img class="card-img-top img-fluid" src="data:image/jpg;base64,{{$row->couverture}}" alt="Base64 encoded image">             
                                     <div class="card-body">
                                         <h4 class="card-title">{{$row->titre }}</h4>
                                         <p class="card-text">Publié le : {{$row->date_publication }}</p>
                                         <p class="card-text">
-                                            <?php echo($row->contenus)?>
+                                            <?php echo($row->resume)?>
                                         </p>
                                         <a href="{{ url('/info/'.urlPrint($row->titre).'/'.$row->idinformation) }}" class="btn btn-primary waves-effect waves-light">Voir plus</a>
                                     </div>

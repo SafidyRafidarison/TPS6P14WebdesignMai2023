@@ -118,7 +118,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="card">
-                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/small/img-5.jpg')}}" alt="Card image cap" width="200">
+                                    <!-- <img class="card-img-top img-fluid" src="{{asset('assets/images/small/img-5.jpg')}}" alt="Card image cap" width="200"> -->
+                                    <img class="card-img-top img-fluid" src="data:image/jpg;base64,{{$inf->couverture}}" alt="Base64 encoded image">             
                                     <div class="card-body">
                                         <h1 class="card-title">{{$inf->titre}}</h1>
                                         

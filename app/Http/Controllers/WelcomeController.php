@@ -127,9 +127,14 @@ class WelcomeController extends Controller
         //  $filename = $picture->getClientOriginalName();
         //  $picture->move(public_path('uploads'), $filename);
         $filename='test.jpg';
+        if ($request->hasFile('file')) {
+            $image = $request->file('file');
+            $encoded_image = base64_encode(file_get_contents($image));
+            $filename=$encoded_image;
+        }
         DB::table('information')->insert([
                     ['idauteur' => $request->input('idauteur'), 'date_creation' =>  $request->input('creation'),'date_publication' =>  $request->input('creation'),
-                    'resume' => $request->input('resume'),'contenus' => $request->input('editor1'),'titre' => $request->input('titre'),'couverture' =>$filename]
+                    'resume' => $request->input('editor2'),'contenus' => $request->input('editor1'),'titre' => $request->input('titre'),'couverture' =>$filename]
                 ]);
                 return redirect()->route('ajout');
     }
