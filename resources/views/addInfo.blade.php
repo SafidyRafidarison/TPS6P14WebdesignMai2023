@@ -1168,7 +1168,7 @@ Buttons
 
 <div class="col-sm-10">
 <input name="file" id="exampleFile" type="file" class="form-control-file">
-<small class="form-text text-muted">Ajouter votre photo comme photo de couverture
+<small class="form-text text-muted">Ajouter votre photo comme photo de couverture(PNG UNIQUEMENT)
 </small>
 </div>
 
