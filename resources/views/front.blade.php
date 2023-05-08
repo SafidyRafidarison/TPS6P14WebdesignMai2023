@@ -1,7 +1,5 @@
 <!doctype html>
-<html lang="en">
-
-    
+<html lang="fr">
 <!-- Mirrored from themesbrand.com/lexa/layouts/ui-cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2023 07:53:51 GMT -->
 <head>
 
@@ -50,11 +48,7 @@
                                 </span>
                             </a>
                         </div>
-
-                      
                     </div>
-
-                    
                 </div>
             </header>
             
@@ -98,23 +92,8 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
-
                         <!-- start page title -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="page-title-box">
-                                    <h4>Cards</h4>
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Lexa</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
-                                            <li class="breadcrumb-item active">Cards</li>
-                                        </ol>
-                                </div>
-                            </div>
-                           
-                        </div>
                         <!-- end page title -->
-
                         <div class="row">
                         @foreach($infs as $row)
                             <div class="col-md-6 col-lg-6 col-xl-3">
@@ -133,14 +112,9 @@
 
                             </div>
                             <!-- end col -->
-                     @endforeach
-
-                            
+                     @endforeach                            
                         </div>
                         <!-- end row -->
-
-                      
-
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
@@ -169,7 +143,4 @@
         <!-- App js -->
         <script src="assets/js/app.js"></script>
     </body>
-
-
-<!-- Mirrored from themesbrand.com/lexa/layouts/ui-cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2023 07:53:56 GMT -->
 </html>
