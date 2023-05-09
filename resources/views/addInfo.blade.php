@@ -89,9 +89,9 @@
 </a>
 </li>
 <li class="nav-item">
-<a disabled="" href="javascript:void(0);" class="nav-link disabled">
+<a disabled="" href="{{url('/')}}" class="nav-link disabled" >
 <i class="nav-link-icon lnr-file-empty"></i>
-<span> Dashboards</span>
+<span>Accueil</span>
 </a>
 </li>
 </ul>
@@ -1024,8 +1024,8 @@ Restore Default
 <ul class="vertical-nav-menu">
 <li class="app-sidebar__heading">Menu</li>
 <li>
-<a href="#">
-<i class="metismenu-icon pe-7s-rocket"></i>Dashboards
+<a href="/">
+<i class="metismenu-icon pe-7s-rocket"></i>Accueil
 <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
 </a>
 <ul>

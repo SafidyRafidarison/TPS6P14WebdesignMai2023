@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
-        <link rel="shortcut icon" href="assets/images/favicon.ico"> 
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -24,19 +23,15 @@
                         <div class="navbar-brand-box">
                             <a href="index.html" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-dark.png" alt="" height="17">
                                 </span>
                             </a>
 
                             <a href="index.html" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-light.png" alt="" height="18">
                                 </span>
                             </a>
                         </div>
@@ -82,7 +77,7 @@
                         <!-- end page title -->
                         <div class="row">
                         @foreach($infs as $row)
-                            <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="col-md-3 col-lg-3 col-xl-3">
                                 <!-- Simple card -->
                                 <div class="card">
                                 <img class="card-img-top img-fluid" src="data:image/jpg;base64,{{$row->couverture}}" alt="Base64 encoded image">             
